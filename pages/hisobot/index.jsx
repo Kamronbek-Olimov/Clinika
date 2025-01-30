@@ -16,13 +16,13 @@ export default function Report() {
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center border border-[#CFCFCF] rounded-[8px]">
                                     <div className="flex items-center gap-x-[10px] px-5 py-3 border-r-[0.5px] borderl-[#CFCFCF]">
-                                        <button><img src="/calendar.svg" alt="" /></button>
+                                        <button><img src="/calendar.svg" alt="svg img" /></button>
                                         <span className="font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#BFBFBF]">
                                             <input type="date" className="outline-none" /> dan
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-x-[10px] px-5 py-3 border-l-[0.5px] borderl-[#CFCFCF]">
-                                        <button><img src="/calendar.svg" alt="" /></button>
+                                        <button><img src="/calendar.svg" alt="svg img" /></button>
                                         <span className="font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#BFBFBF]">
                                             <input type="date" className="outline-none appearance-none" /> gacha
                                         </span>
@@ -30,50 +30,38 @@ export default function Report() {
                                 </div>
                                 <div className="flex items-center gap-x-[30px]">
                                     <button className="bg-[#71AB65] flex items-center gap-x-[10px] px-5 py-3 rounded-[8px] font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#FFFFFF]">
-                                        <img src="/doctor.svg" alt="" />
+                                        <img src="/doctor.svg" alt="svg img" />
                                         <span>Shovkat</span>
-                                        <img src="/down.svg" alt="" />
+                                        <img src="/down.svg" alt="svg img" />
                                     </button>
                                     <button className="bg-[#E9E9E91A] flex items-center gap-x-[10px] px-5 py-3 rounded-[8px] border border-[#CFCFCF] font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#CFCFCF]">
-                                        <img src="/steth.svg" alt="" />
+                                        <img src="/steth.svg" alt="svg img" />
                                         <span>Servis</span>
-                                        <img src="/arrow-down.svg" alt="" />
+                                        <img src="/arrow-down.svg" alt="svg img" />
                                     </button>
                                 </div>
                             </div>
                             <hr className="bg-[#CFCFCF] w-full h-[1px] rounded-[2px]" />
                         </div>
-                        <table className="flex flex-col gap-y-5">
-                            <thead>
-                                <tr className="flex items-center justify-between">
-                                    <th className="text-center px-[10px]">
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Doktor ismi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Xizmat turi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Narxi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Xizmat donasi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Summasi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Sana</h5>
-                                    </th>
+                        <table className="w-full table-fixed">
+                            <thead className="border-b border-b-[#CFCFCF] py-5 font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000] text-left">
+                                <tr className="w-full">
+                                    <th className="py-3 w-1/6">Doktor ismi</th>
+                                    <th className="px-4 py-3 w-1/6">Xizmat turi</th>
+                                    <th className="px-4 py-3 w-1/6">Narxi</th>
+                                    <th className="px-4 py-3 w-1/6">Xizmat donasi</th>
+                                    <th className="px-4 py-3 w-1/6">Summasi</th>
+                                    <th className="px-4 py-3 w-1/6">Sana</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr className="flex items-center justify-between">
-                                    <td>Rizaev Shovkat</td>
-                                    <td>Uzi Opka</td>
-                                    <td>200.000 Sum</td>
-                                    <td>10</td>
-                                    <td>2.000.000 Sum</td>
-                                    <td>16.12.2024</td>
+                            <tbody className="font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#000000]">
+                                <tr>
+                                    <td className="py-5 w-1/6">Rizaev Shovkat</td>
+                                    <td className="px-4 py-5 w-1/6">Uzi Opka</td>
+                                    <td className="px-4 py-5 w-1/6">200.000 Sum</td>
+                                    <td className="px-4 py-5 w-1/6">10</td>
+                                    <td className="px-4 py-5 w-1/6">2.000.000 Sum</td>
+                                    <td className="px-4 py-5 w-1/6">16.12.2024</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -87,7 +75,7 @@ export default function Report() {
                             <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">5</button>
                             <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">...</button>
                             <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">10</button>
-                            <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]"><img src="/other.svg" alt="" /></button>
+                            <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]"><img src="/other.svg" alt="svg img" /></button>
                         </div>
                         <div className="bg-[#E9E9E91A] px-5 py-3 rounded-[8px] border border-[#CFCFCF] font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#CFCFCF]">Umumiy summa 2.000.000 Sum</div>
                     </div>

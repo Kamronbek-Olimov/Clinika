@@ -15,63 +15,53 @@ export default function Intro() {
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center border border-[#CFCFCF] rounded-[8px]">
                                     <div className="flex items-center gap-x-[10px] px-5 py-3 border-r-[0.5px] borderl-[#CFCFCF]">
-                                        <button><img src="/calendar.svg" alt="" /></button>
+                                        <button><img src="/calendar.svg" alt="svg img" /></button>
                                         <span className="font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#BFBFBF]">
                                             <input type="date" className="outline-none" /> dan
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-x-[10px] px-5 py-3 border-l-[0.5px] borderl-[#CFCFCF]">
-                                        <button><img src="/calendar.svg" alt="" /></button>
+                                        <button><img src="/calendar.svg" alt="svg img" /></button>
                                         <span className="font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#BFBFBF]">
                                             <input type="date" className="outline-none appearance-none" /> gacha
                                         </span>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-x-5">
-                                <button className="bg-[#71AB65] flex items-center gap-x-[10px] px-5 py-3 rounded-[8px] font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#FFFFFF]">
-                                        <img src="/doctor.svg" alt="" />
+                                    <button className="bg-[#71AB65] flex items-center gap-x-[10px] px-5 py-3 rounded-[8px] font-spaceGrotesk font-medium text-[16px] leading-[20.42px] text-[#FFFFFF]">
+                                        <img src="/doctor.svg" alt="svg img" />
                                         <span>Shifokor</span>
-                                        <img src="/down.svg" alt="" />
+                                        <img src="/down.svg" alt="svg img" />
                                     </button>
                                     <button className="bg-[#71AB65] p-[12.5px] rounded-[8px]">
-                                        <img src="/add.svg" alt="" />
+                                        <img src="/add.svg" alt="svg img" />
                                     </button>
                                 </div>
                             </div>
                             <hr className="bg-[#CFCFCF] w-full h-[1px] rounded-[2px]" />
                         </div>
-                        <table className="flex flex-col gap-y-5">
-                            <thead>
-                                <tr className="flex items-center justify-between">
-                                    <th className="text-center px-[10px]">
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">#</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Ism</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Familiya</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Yo’nalishi</h5>
-                                    </th>
-                                    <th>
-                                        <h5 className="font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000]">Xona raqami</h5>
-                                    </th>
+                        <table className="w-full table-fixed">
+                            <thead className="border-b border-b-[#CFCFCF] py-5 font-spaceGrotesk font-bold text-[16px] leading-[20.42px] text-[#000000] text-left">
+                                <tr className="w-full">
+                                    <th className="py-3 w-1/5">#</th>
+                                    <th className="px-4 py-3 w-1/5">Ism</th>
+                                    <th className="px-4 py-3 w-1/5">Familiya</th>
+                                    <th className="px-4 py-3 w-1/5">Yo'nalishi</th>
+                                    <th className="px-4 py-3 w-1/5">Xona raqami</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr className="flex items-center justify-between">
-                                    <td>
+                            <tbody className="font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#000000]">
+                                <tr className="relative">
+                                    <td className="py-5 w-1/5">
                                         <span className="py-[6px] px-[12.5px] bg-[#71AB651A] rounded-full border border-[#71AB65] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#71AB65]">1</span>
                                     </td>
-                                    <td>Shovkat</td>
-                                    <td>Nosirov</td>
-                                    <td>Kardeolog</td>
-                                    <td className="flex items-center justify-between gap-x-10">
+                                    <td className="px-4 py-5 w-1/5">Shovkat</td>
+                                    <td className="px-4 py-5 w-1/5">Nosirov</td>
+                                    <td className="px-4 py-5 w-1/5">Kardeolog</td>
+                                    <td className="px-4 py-5 w-1/5">
                                         <span className="bg-[#7185D41A] px-[7.5px] py-[6px] rounded-[4px] border border-[#7185D4] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#7185D4]">41</span>
-                                        <button className="bg-[#C24B51] p-1 rounded-[4px]">
-                                            <img src="/trash.svg" alt="" />
+                                        <button className="bg-[#C24B51] p-1 rounded-[4px] absolute right-0 top-1/2 -translate-y-1/2">
+                                            <img src="/trash.svg" alt="svg img" />
                                         </button>
                                     </td>
                                 </tr>
@@ -86,7 +76,7 @@ export default function Intro() {
                         <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">5</button>
                         <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">...</button>
                         <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]">10</button>
-                        <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]"><img src="/other.svg" alt="" /></button>
+                        <button className="px-[9px] py-[3px] rounded-[4px] font-spaceGrotesk font-normal text-[16px] leading-[20.42px] text-[#808080]"><img src="/other.svg" alt="svg img" /></button>
                     </div>
                 </div>
             </div>

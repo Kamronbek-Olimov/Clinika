@@ -3,17 +3,6 @@ import Head from "next/head"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 export default function Home() {
-  const API = process.env.NEXT_PUBLIC_API
-  const getData = async (API) => {
-    try {
-      const req = await fetch(API)
-      const data = await req.json()
-      console.log(data)
-    } catch (error) {
-      console.error('Xatolik yuz berdi:', error)
-    }
-  }
-  getData(API)
   const [login, setLogin] = useState("")
   const [parol, setParol] = useState("")
   const [hidden, setHidden] = useState(false)
@@ -123,7 +112,7 @@ export default function Home() {
             </form>
           </div>
           <div className="hidden lg:block">
-            <img src="/login.svg" alt="Login illustration" />
+            <img src="/login-img.svg" alt="Login illustration" />
           </div>
         </div>
       </div>
